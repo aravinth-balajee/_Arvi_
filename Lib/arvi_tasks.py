@@ -27,14 +27,5 @@ class Arvi(whatsappui,load_data):
         else:
             task.get(taskname)()
 
-if __name__=="__main__":
-    handle=Arvi()
-    msg='go online'
-    while True and msg.lower() !="go offline":
-        msg=handle.read_msg()
-        r_msg=reply_msg(msg)
-        if r_msg[0]:
-            handle.do_task(r_msg[1])
-        else:
-            handle.write_msg(r_msg[1])
+
 
