@@ -6,7 +6,6 @@ from whatsapp import whatsappui
 class Arvi(whatsappui,load_data):
 
     def __init__(self):
-        os.system("taskkill /f /im  chrome.exe")
         os.system("taskkill /f /im  chromedriver.exe")
         load_data.__init__(self)
         whatsappui.__init__(self)
